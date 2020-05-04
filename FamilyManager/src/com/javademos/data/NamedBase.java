@@ -1,9 +1,10 @@
 package com.javademos.data;
 
 public abstract class NamedBase {
-    private String name = "";
+    private String name;
 
-    public void setName(String name) {
+    public NamedBase(String name){
+
         this.name = name;
     }
 

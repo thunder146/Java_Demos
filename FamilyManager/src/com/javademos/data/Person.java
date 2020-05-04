@@ -1,24 +1,25 @@
 package com.javademos.data;
 
+import java.time.LocalDate;
+
 public class Person extends NamedBase {
     private final String familyName;
     private final String name;
-    private final int age;
+    private LocalDate birthDate;
 
-    public Person(String familyName, String name, int age) {
-        // TODO call super instead of setName(...)
+    public Person(String familyName, String name, LocalDate birthDate) {
+        super(name);
+
         this.familyName = familyName;
         this.name = name;
-        this.age = age;
-
-        setName(name);
-    }
-
-    public int getAge() {
-        return age;
+        this.birthDate = birthDate;
     }
 
     public String getFamilyName() {
         return familyName;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
     }
 }
