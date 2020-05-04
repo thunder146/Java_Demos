@@ -7,7 +7,6 @@ public class ValidationException extends Exception{
     private List<ValidatorResult> validatorResults;
 
     public ValidationException(List<ValidatorResult> validatorResults){
-
         this.validatorResults = validatorResults;
     }
 
