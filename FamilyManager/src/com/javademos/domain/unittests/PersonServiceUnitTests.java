@@ -72,7 +72,7 @@ public class PersonServiceUnitTests {
 
         // assert
         assertNotNull(ex.getValidatorResults());
-        
+
         ValidatorResult firstResult = (ValidatorResult)ex.getValidatorResults().toArray()[0];
         assertTrue(firstResult.getFailedRule() == NameNotEmptyValidatorRule.class);
 

@@ -12,12 +12,11 @@ public class Main {
     public static void main(String[] args){
         PersonService personService = new PersonService();
 
-        Person person1 = null;
         try {
-            person1 = personService.createPerson("Pfeifer", "Igor",
-                    LocalDate.of(1988,7,11));
+            Person person1 = personService.createPerson("Tester", "Tonny",
+                    LocalDate.of(1975, 2,8));
 
-            System.out.println(person1.getName() + " is born on " + person1.getBirthDate());
+            System.out.println(person1.toString());
         } catch (ValidationException e) {
             for (ValidatorResult result: e.getValidatorResults()){
                 System.out.println(result.getMessage());

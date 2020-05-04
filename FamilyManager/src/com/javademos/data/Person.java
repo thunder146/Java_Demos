@@ -1,6 +1,7 @@
 package com.javademos.data;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Person extends NamedBase {
     private final String familyName;
@@ -21,5 +22,11 @@ public class Person extends NamedBase {
 
     public LocalDate getBirthDate() {
         return birthDate;
+    }
+
+    @Override
+    public String toString() {
+        String formattedBirthDate = getBirthDate().format(DateTimeFormatter.ISO_LOCAL_DATE);
+        return String.format("%s %s is born on %s", getName(), getFamilyName(), formattedBirthDate);
     }
 }
