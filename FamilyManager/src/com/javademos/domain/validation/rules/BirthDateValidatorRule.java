@@ -1,11 +1,13 @@
-package com.javademos.domain.validation;
+package com.javademos.domain.validation.rules;
+
+import com.javademos.domain.validation.ValidatorResult;
 
 import java.time.LocalDate;
 
-public class PersonBirthDateValidator implements IValidatorRule{
+public class BirthDateValidatorRule implements IValidatorRule{
     private LocalDate birthDate;
 
-    public PersonBirthDateValidator(LocalDate birthDate){
+    public BirthDateValidatorRule(LocalDate birthDate){
         this.birthDate = birthDate;
     }
 
