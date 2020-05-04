@@ -14,7 +14,8 @@ public class Main {
 
         Person person1 = null;
         try {
-            person1 = personService.createPerson("Pfeifer", "Igor", LocalDate.of(1988,7,11));
+            person1 = personService.createPerson("Pfeifer", "Igor",
+                    LocalDate.of(1988,7,11));
 
             System.out.println(person1.getName() + " is born on " + person1.getBirthDate());
         } catch (ValidationException e) {

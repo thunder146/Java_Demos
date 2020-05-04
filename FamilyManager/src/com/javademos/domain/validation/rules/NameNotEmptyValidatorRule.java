@@ -14,8 +14,8 @@ public class NameNotEmptyValidatorRule implements IValidatorRule{
     @Override
     public ValidatorResult Validate() {
         if(name == null || name.length() == 0)
-            return new ValidatorResult(false, "Name must not be empty");
+            return new ValidatorResult(false, "Name must not be empty", this.getClass());
 
-        return new ValidatorResult(true,"");
+        return new ValidatorResult(true);
     }
 }

@@ -20,9 +20,9 @@ public class BirthDateValidatorRule implements IValidatorRule{
         LocalDate latestAllowed = LocalDate.now();
 
         if(birthDate.compareTo(earliestAllowed) <= -1 || birthDate.compareTo(latestAllowed) >= 1 ){
-            return new ValidatorResult(false, "birth date not valid " + birthDate);
+            return new ValidatorResult(false, "birth date not valid " + birthDate, this.getClass());
         }
 
-        return new ValidatorResult(true, "");
+        return new ValidatorResult(true);
     }
 }

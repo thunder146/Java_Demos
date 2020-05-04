@@ -24,6 +24,6 @@ public final class Validator {
         if(!failedResults.isEmpty())
             throw new ValidationException(failedResults);
 
-        return new ValidatorResult(true,"");
+        return new ValidatorResult(true);
     }
 }
