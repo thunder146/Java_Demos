@@ -1,4 +1,4 @@
-package com.javademos.domain;
+package com.javademos.domain.validation;
 
 import java.util.List;
 

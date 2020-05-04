@@ -1,4 +1,4 @@
-package com.javademos.domain;
+package com.javademos.domain.validation;
 
 public interface IValidatorRule {
     ValidatorResult Validate();

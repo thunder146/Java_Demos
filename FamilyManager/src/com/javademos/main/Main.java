@@ -2,8 +2,8 @@ package com.javademos.main;
 
 import com.javademos.data.Person;
 import com.javademos.domain.PersonService;
-import com.javademos.domain.ValidationException;
-import com.javademos.domain.ValidatorResult;
+import com.javademos.domain.validation.ValidationException;
+import com.javademos.domain.validation.ValidatorResult;
 
 public class Main {
 

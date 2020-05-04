@@ -1,6 +1,10 @@
 package com.javademos.domain;
 
 import com.javademos.data.Person;
+import com.javademos.domain.validation.IValidatorRule;
+import com.javademos.domain.validation.PersonAgeValidatorRule;
+import com.javademos.domain.validation.ValidationException;
+import com.javademos.domain.validation.Validator;
 
 import java.util.ArrayList;
 import java.util.List;
