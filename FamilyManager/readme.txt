@@ -1,1 +1,1 @@
-Simple demo application with web interface.
+Simple demo application with console output.
